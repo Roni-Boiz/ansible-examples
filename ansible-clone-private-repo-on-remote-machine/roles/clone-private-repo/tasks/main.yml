@@ -1,0 +1,8 @@
+---
+## Clone the private repo on remote server
+- name: Clone a private Git repository
+  git:
+    repo: git@github.com:Roni-Boiz/hello-world.git
+    dest: /home/ubuntu/hello-world-repo
+    accept_hostkey: yes
+    key_file: /home/ubuntu/.ssh/id_rsa
